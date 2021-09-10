@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <title>标题标签</title>
+    <title>表格标题</title>
+    <!--这里使用CSS为表格加上边框-->
+    <style type="text/css">
+        table,
+        tr,
+        td {
+            border: 1px solid silver;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>这是一级标题</h1>
-    <h2>这是二级标题</h2>
-    <h3>这是三级标题</h3>
-    <h4>这是四级标题</h4>
-    <h5>这是五级标题</h5>
-    <h6>这是六级标题</h6>
-    
+    <!-- 一个表格只能有一个标题，也就是只能有一个caption标签。
+    在默认情况下，标题都是位于整个表格内的第一行。 -->
+    <table>
+        <caption>考试成绩表</caption>
+        <tr>
+            <td>小明</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>小红</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>小杰</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
 </body>
+
 </html>
